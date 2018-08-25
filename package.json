@@ -1,8 +1,8 @@
 {
   "name": "laraveljwtjs",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Package for handling authentication on client side with Laravel JWT",
-  "main": "Index.js",
+  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "webpack --mode development ./src/index.js --output ./index.js",
@@ -22,9 +22,9 @@
   "author": "Glenn Gijsberts",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/glenngijsberts/base64-js/issues"
+    "url": "https://github.com/glenngijsberts/laraveljwt-js/issues"
   },
-  "homepage": "https://github.com/glenngijsberts/base64-js#readme",
+  "homepage": "https://github.com/glenngijsberts/laraveljwt-js#readme",
   "devDependencies": {
     "babel-core": "^6.26.3",
     "babel-loader": "^7.1.5",
