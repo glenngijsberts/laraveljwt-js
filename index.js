@@ -16,8 +16,8 @@ function getToken(prefix) {
     return false;
 }
 
-function checkAuthenticated() {
-    return getToken() ? 1 : 0;
+function checkAuthenticated(prefix) {
+    return getToken(prefix) ? 1 : 0;
 }
 
 function log(string) {
@@ -80,7 +80,7 @@ export default class Auth {
     }
 
     setTokens(tokens) {
-        if (tokens.access_token && tokens.expires_in && tokens.token_type) {
+        if (tokens.access_token) {
             // Save the object in localStorage
             localStorage.setItem(`${this.prefix}-auth`, JSON.stringify(tokens));
             window.location.href = this.rederictAfterAuthenticated;
