@@ -152,6 +152,8 @@ console.log(checkAuthenticated('api'));
 These two functions are used together in the `Auth` class to retrieve the headers that are required for making the http requests. The `getToken()` helper will return your `access_token` from `localStorage`. It requires your `prefix` but can be used without the `Auth` class. The `getHeaders()` helper will generate the required headers for your http requests and will be using the token you get from the `getToken()` helper.
 
 ```javascript
+import { getHeaders, getToken } from 'laraveljwtjs';
+
 getHeaders(getToken(prefix));
 
 //Example
@@ -173,13 +175,6 @@ function getHeaders(token) {
         Authorization: `Bearer ${token}`,
     };
 }
-```
-
-```javascript
-import { checkAuthenticated } from 'laraveljwtjs';
-
-// Check if you're authenticated
-console.log(checkAuthenticated('api'));
 ```
 
 ### Features under the hood
