@@ -4,11 +4,11 @@
   "description": "Package for handling authentication on client side with Laravel JWT",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": ""
+    "url": "https://github.com/glenngijsberts/laraveljwt-js/"
   },
   "keywords": [
     "JS",
