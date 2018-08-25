@@ -1,12 +1,10 @@
 {
   "name": "laraveljwtjs",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Package for handling authentication on client side with Laravel JWT",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "webpack --mode development ./src/index.js --output ./index.js",
-    "build": "webpack --mode production ./src/index.js --output ./index.js"
   },
   "repository": {
     "type": "git",
